@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<title>Calculadora</title>
+
+		<!-- BOOSTRAP CDN-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css">
+	</head>
+
+  <body style="background: #D9D9D9" onload="calculator.load()">
+
+    <div class="container">
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <br />
+
+          <div class="calculadora">
+            <input type="text" class="form-control resultado" placeholder="0" disabled="disabled" />
+            
+            <div class="row">
+              <button type="button" class="btn btn-dark btn-lg clear font-weight-light" id="reset">C</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light">/</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light">x</button>
+            </div>
+
+            <div class="row">
+              <button type="button" class="btn btn-dark btn-lg font-weight-light input-number">7</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light input-number">8</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light input-number">9</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light">-</button>
+            </div>
+            
+            <div class="row">
+              <button type="button" class="btn btn-dark btn-lg font-weight-light input-number">4</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light input-number">5</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light input-number">6</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light">+</button>
+            </div>
+
+            <div class="row">
+              <button type="button" class="btn btn-dark btn-lg font-weight-light input-number">1</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light input-number">2</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light input-number">3</button>
+              <button type="button" class="btn btn-dark btn-lg enter">=</button>
+            </div>
+
+            <div class="row" style="margin-top: -60px">
+              <button type="button" class="btn btn-dark zero btn-lg font-weight-light input-number">0</button>
+              <button type="button" class="btn btn-dark btn-lg font-weight-light">.</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div> 
+    
+   <script src="./js/main.js"></script>
+  </body>	
+
+</html>
